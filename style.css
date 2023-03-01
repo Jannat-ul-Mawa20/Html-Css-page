@@ -1,0 +1,693 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*section 1*/
+.banner {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(53, 54, 16, 0.7)), url('pics/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 15px 25px;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 90px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: cornsilk;
+
+}
+
+/*  effect of underline and hover on menu*/
+.navbar ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(173, 84, 84);
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+    transition: 0.7s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/*content part in section 1*/
+.content {
+    width: 100%;
+    height: 100px;
+    margin-top: 80px;
+}
+
+.content p {
+    color: cornsilk;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Pacifico', cursive;
+}
+
+.content h1 {
+    color: cornsilk;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+}
+
+#one button {
+    width: 190px;
+    height: 60px;
+    margin: 35px 550px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: rgb(14, 71, 94);
+    color: cornsilk;
+    border-color: rgb(4, 41, 56);
+    cursor: pointer;
+}
+
+/*section 2*/
+.section2 {
+    width: 100%;
+    height: 60vh;
+    background-color: gainsboro;
+}
+
+.section2 h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+/* to underline the heading of h3*/
+.section2 h3::after {
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 47.5%;
+    bottom: -8px;
+}
+
+/*icon in boxes*/
+#box1-icon {
+    color: limegreen;
+    transform: translateX(90px);
+}
+
+#box2-icon {
+    color: limegreen;
+    transform: translateX(90px);
+}
+
+#box3-icon {
+    color: limegreen;
+    transform: translateX(90px);
+}
+
+#box4-icon {
+    color: limegreen;
+    transform: translateX(90px);
+}
+
+/* div/ boxes in which content is written*/
+.content-section {
+    width: 230px;
+    height: 150px;
+    background-color: ivory;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: -80px;
+    padding: 7px;
+    box-shadow: 2px 2px 20px grey;
+    float: left;
+
+}
+
+/*paragraph box*/
+.content-section p {
+    text-align: justify;
+    padding: 5px;
+    font-size: 13px;
+}
+
+#heading {
+    text-align: center;
+    padding-top: 15px;
+
+    font-size: 20px;
+}
+
+/* section3*/
+.banner2 {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(13, 39, 70, 0.7)), url('pics/banner2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+    position: relative;
+}
+
+.banner2 h2 {
+    color: cornsilk;
+}
+
+.banner2 p {
+    color: cornsilk;
+}
+
+#first {
+    width: 170px;
+    padding: 15px;
+    height: 50px;
+    margin: 20px 5px;
+    border-radius: 25px;
+    border-color: darkblue;
+}
+
+#second {
+    width: 170px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px 5px;
+    border-radius: 25px;
+    background-color: rgb(4, 23, 85);
+    color: cornsilk;
+}
+
+/* images on banner2/section3*/
+.box1 {
+    width: 200px;
+    height: 150px;
+    right: 140px;
+    top: 300px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.box1:hover {
+    z-index: 1;
+}
+
+.box2 {
+    width: 200px;
+    height: 150px;
+    margin-left: 650px;
+    top: 230px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.box2:hover {
+    z-index: 3;
+}
+
+.box3 {
+    width: 200px;
+    height: 150px;
+    margin-left: 800px;
+    top: 180px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.box3:hover {
+    z-index: 2;
+}
+
+/*section4*/
+.section4 {
+    width: 100%;
+    background-color: gainsboro;
+    height: 100vh;
+}
+
+.section4 h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+/*to underline the heading h3*/
+.section4 h3::after {
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 47.5%;
+    bottom: -8px;
+}
+
+/* navbar on section4*/
+.navbar1 {
+    width: 100%;
+    height: 120px;
+
+}
+
+.navbar1 ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px 10px;
+    text-transform: uppercase;
+    position: relative;
+    transform: translateX(400px);
+    top: 50px;
+    font-weight: bold;
+}
+
+.navbar1 ul li a {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+/*to change the color of first menu*/
+#col {
+    color: limegreen;
+}
+
+/*gellery section of 8 images*/
+#img1 {
+    width: 230px;
+    height: 180px;
+    float: left;
+    margin-left: 140px;
+}
+
+#img2 {
+    width: 230px;
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+}
+
+#img3 {
+    width: 230px;
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+}
+
+#img4 {
+    width: 230px;
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+}
+
+#img5 {
+    width: 230px;
+    height: 180px;
+    float: left;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+#img6 {
+    width: 230px;
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#img7 {
+    width: 230px;
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#img8 {
+    width: 230px;
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*section5*/
+.section5 {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(134, 196, 134);
+}
+
+/*heading of section 5*/
+.section5 h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+/*to underline the heading*/
+.section5 h3::after {
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 47.5%;
+    bottom: -8px;
+}
+
+/*to set image on section5*/
+#pic4 {
+    width: 330px;
+    height: 230px;
+    margin-top: 50px;
+    margin-left: 250px;
+    background-image: url('pics/pic4.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/*to create half overlay on image*/
+#child4 {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    position: absolute;
+}
+
+#child4 p {
+    color: cornsilk;
+    padding: 2px 8px;
+}
+
+/* next image*/
+#pic5 {
+    width: 270px;
+    height: 100px;
+    margin-top: 60px;
+    margin-left: 350px;
+    background-image: url('pics/pic5.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#child5 {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    position: absolute;
+}
+
+#child5 p {
+    color: cornsilk;
+    padding: 1px 8px;
+}
+
+/*next image*/
+#pic6 {
+    width: 270px;
+    height: 110px;
+    margin-top: 20px;
+    margin-left: 350px;
+    background-image: url('pics/pic6.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#child6 {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    position: absolute;
+}
+
+#child6 p {
+    color: cornsilk;
+    padding: 0 8px;
+}
+
+/*section6*/
+.section6 {
+    width: 100%;
+    height: 30vh;
+    background-color: ivory;
+    position: relative;
+}
+
+/*first box on section6*/
+.part1 {
+    width: 200px;
+    height: 100px;
+    background-color: gainsboro;
+    left: 170px;
+    transform: translateY(50px);
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*heading*/
+.part1 h2 {
+    color: limegreen;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.part1 p {
+    text-align: center;
+    padding: 15px;
+    color: rgb(90, 103, 117);
+}
+
+/*second box*/
+.part2 {
+    width: 200px;
+    height: 100px;
+    background-color: gainsboro;
+    left: 400px;
+    transform: translateY(50px);
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.part2 h2 {
+    color: limegreen;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.part2 p {
+    text-align: center;
+    padding: 15px;
+    color: rgb(90, 103, 117);
+}
+
+/*third box*/
+.part3 {
+    width: 200px;
+    height: 100px;
+    background-color: gainsboro;
+    left: 630px;
+    transform: translateY(50px);
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.part3 h2 {
+    color: limegreen;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.part3 p {
+    text-align: center;
+    padding: 15px;
+    color: rgb(90, 103, 117);
+}
+
+/*fourth box*/
+.part4 {
+    width: 200px;
+    height: 100px;
+    background-color: gainsboro;
+    left: 860px;
+    transform: translateY(50px);
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.part4 h2 {
+    color: limegreen;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.part4 p {
+    text-align: center;
+    padding: 15px;
+    color: rgb(90, 103, 117);
+}
+
+/*section7*/
+.section7 {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('pics/banner2.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section7 h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 2px;
+    position: relative;
+    color: azure;
+}
+
+/*to underline the heading*/
+.section7 h3::after {
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: azure;
+    position: absolute;
+    left: 47.5%;
+    bottom: -8px;
+}
+
+/*image of map on section 7*/
+#map {
+    width: 370px;
+    height: 250px;
+    margin-left: 250px;
+    margin-top: 70px;
+}
+
+/*contact form*/
+.form input {
+    position: relative;
+    background-color: rgba(49, 49, 54, 0.9);
+    width: 200px;
+    height: 50px;
+    left: 640px;
+    bottom: 255px;
+    border: black;
+}
+
+.form1 input {
+    position: relative;
+    background-color: rgba(49, 49, 54, 0.9);
+    width: 200px;
+    height: 50px;
+    left: 860px;
+    bottom: 305px;
+    border: black;
+}
+
+.form2 textarea {
+    position: relative;
+    background-color: rgba(49, 49, 54, 0.9);
+    width: 420px;
+    height: 120px;
+    left: 640px;
+    bottom: 280px;
+    padding: 10px;
+    border: black;
+}
+
+button {
+    margin: auto;
+    transform: translate(30px, -10px);
+    height: 40px;
+    width: 170px;
+    border-radius: 25px;
+    border: 1px solid limegreen;
+    background-color: limegreen;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(34, 27, 27);
+    position: relative;
+}
+
+.foot {
+    color: lightyellow;
+    margin-left: 100px;
+    padding-top: 20px;
+    font-size: 20px;
+    ;
+}
+
+/*icons*/
+#icon1 {
+    color: limegreen;
+    position: absolute;
+    left: 995px;
+    top: 10px;
+
+}
+
+#icon2 {
+    color: limegreen;
+    position: absolute;
+    left: 1050px;
+    top: 10px;
+
+}
+
+#icon3 {
+    color: limegreen;
+    position: absolute;
+    left: 1100px;
+    top: 10px;
+
+}
+
+#icon4 {
+    color: limegreen;
+    position: absolute;
+    left: 1150px;
+    top: 10px;
+
+}
